@@ -39,25 +39,20 @@
 
         <div class="content">
             <div class="textBox">
-                <h2>It's not just dolls<br> It's <span class="span">Buttercup Bunnies!</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quas debitis tempora qui minima amet. 
-                    Deleniti eius earum asperiores, tenetur nemo doloremque, quam voluptate magni nobis vitae dicta repellat 
-                    quis officiis debitis obcaecati distinctio cupiditate pariatur! </p>
+                <h2><p id="headText">It's not just plushies. It's</p><span class="span" id="headText2">Buttercup Bunnies!</span><p id="headText3"></p></h2>
+                <p id="parText"> </p>
                 <a href="#" class="learn">Learn More</a>
             </div>
             <div class="imgBox">
-                <img src="./buttecup images/bunnies.jpg" alt="" class="butterBig">
+                <img src="./buttecup images/IMG-20220707-WA0016.jpg" alt="" class="butterBig">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="./buttecup images/icon1.jpg" alt="" onclick="imgSlider('./buttecup images/bunnies.jpg'); changeCircleColor('#b9948b')"></li>
-            <li><img src="./buttecup images/icon2.jpg" alt="" onclick="imgSlider('./buttecup images/giraffe.jpg'); changeCircleColor('#65a4b7')"></li>
-            <li><img src="./buttecup images/icon3.jpg" alt="" onclick="imgSlider('./buttecup images/yoda.jpg'); changeCircleColor('#c09a78')"></li>
-            <li><img src="./buttecup images/icon4.jpg" alt="" onclick="imgSlider('./buttecup images/giraffeHippo.jpg'); changeCircleColor('#6f588f')"></li>
-            <li><img src="./buttecup images/icon6.jpg" alt="" onclick="imgSlider('./buttecup images/turtleSnake.jpg'); changeCircleColor('#828e5b')"></li>
-            <li><img src="./buttecup images/icon5.jpg" alt="" onclick="imgSlider('./buttecup images/bedBunny.jpg'); changeCircleColor('#c37b69')"></li>
-            <li><img src="./buttecup images/icon7.jpg" alt="" onclick="imgSlider('./buttecup images/unicorns.jpg'); changeCircleColor('#8a78b8')"></li>
-        </ul>
+            <li><img src="./bunnyflag.png" alt="" onclick="imgSlider('./buttecup images/IMG-20220707-WA0016.jpg'); changeCircleColor('#8a78b8');changeText();"></li>
+            <li><img src="./buttecup images/giraffe_dy.png" alt="" onclick="imgSlider('./buttecup images/giraffe.jpg'); changeCircleColor('#65a4b7'), changeTextone(); "></li>
+            <li><img src="./buttecup images/bedBunny_db.png" alt="" onclick="imgSlider('./buttecup images/bedBunny.jpg'); changeCircleColor('#c37b69'); changeTextTwo()"></li>
+            <li><img src="./buttecup images/icon4_df.png" alt="" onclick="imgSlider('./buttecup images/giraffeHippo.jpg'); changeCircleColor('#5a7192'); changeTextThree()"></li>
+            <li><img src="./buttecup images/icon3_dd.png" alt="" onclick="imgSlider('./buttecup images/yoda.jpg'); changeCircleColor('#cd8a8a'); changeText();changeTextFour()"></li>
         
     </section>
 
@@ -73,6 +68,7 @@
         circle.style.background = color;
         span.style.color = color;
         learn.style.background = color;
+        
 
     }
 
@@ -83,6 +79,65 @@
         navigation.classList.toggle('active');
 
     }
+
+    /*------------------- This function changes the Paragraph text displayed on the left ---------*/ 
+    function changeText(){
+        var text = document.getElementById("parText");
+        var head = document.getElementById("headText");
+        var head2 = document.getElementById("headText2");
+        var head3 = document.getElementById("headText3");
+        text.innerHTML = "";
+        head.innerHTML = "It's not just plushies. It's";
+        head2.innerHTML = "Buttercup Bunnies!";
+        head3.innerHTML = "";
+        
+    }
+    function changeTextone(){
+        var text = document.getElementById("parText");
+        var head = document.getElementById("headText");
+        var head2 = document.getElementById("headText2");
+        var head3 = document.getElementById("headText3");
+        text.innerHTML = "Machine washable and soft hypo-allergenic plush toys. <br/> Safety eyes are used so there are not choking hazards for little ones.<br/>The perfect new-born and toddler gift!";
+        head.innerHTML = "Handmade with";
+        head2.innerHTML = "100% COTTON";
+        head3.innerHTML = "and LOTS of LOVE!";
+    }
+    function changeTextTwo(){
+        var text = document.getElementById("parText");
+        var head = document.getElementById("headText");
+        var head2 = document.getElementById("headText2");
+        var head3 = document.getElementById("headText3");
+        text.innerHTML = "The perfect addition to any family home or guesthouse. <br/>Turn any living space or bedroom into LOVE with a soft touch.";
+        head.innerHTML = "HOME is where the";
+        head2.innerHTML = "HEART";
+        head3.innerHTML = "is...";
+    }
+    function changeTextThree(){
+        var text = document.getElementById("parText");
+        var head = document.getElementById("headText");
+        var head2 = document.getElementById("headText2");
+        var head3 = document.getElementById("headText3");
+        text.innerHTML = "Made with Vinnis Nikkim hand dyed 100% cotton from South Africa,<br/>everyone can have a little home-made love in their home!";
+        head.innerHTML = "Buttercup Bunnies and";
+        head2.innerHTML = "FRIENDS";
+        head3.innerHTML = "are the perfect gifts for loved ones!";
+    }
+    function changeTextFour(){
+        var text = document.getElementById("parText");
+        var head = document.getElementById("headText");
+        var head2 = document.getElementById("headText2");
+        var head3 = document.getElementById("headText3");
+        text.innerHTML = "";
+        head.innerHTML = "From YOUNG to OLD <br> everyone deserves a little";
+        head2.innerHTML = "MAGIC!";
+        head3.innerHTML = "";
+    }
+    
+   
+  
+    
+    
+    
    </script>
 
     
