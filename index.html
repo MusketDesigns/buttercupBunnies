@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="about.html" rel="import" />
+    <link href="gallery.html" rel="import" />
     <!-- Stylesheets (CSS)-->
     <link rel="stylesheet" href="./buttercup.css">
     <title>Buttercup Bunnies</title>
@@ -28,9 +29,9 @@
             <a href="#" class="logo"><img src="./buttecup images/logo.jpg" alt=""></a>
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
@@ -65,7 +66,7 @@
         const circle = document.querySelector('.circle');
         const span = document.querySelector('.span');
         const learn = document.querySelector('.learn');
-        circle.style.background = color;
+        circle.style.backgroundColor = color;
         span.style.color = color;
         learn.style.background = color;
         

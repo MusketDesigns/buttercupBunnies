@@ -199,9 +199,15 @@ header ul li a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #8a78b8;
+    background-color: #8a78b8;
     clip-path: circle(600px at right 780px);
-    background-image: url(./bunnyflag.png);
+    background-image: url(./Untitled-2_ft.png);
+    background-position:  800px 300px;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    
+    
+    
 }
 
 
@@ -293,3 +299,74 @@ header ul li a {
     }
     
 }
+
+
+/* ------------------------------- ABOUT PAGE CONTENT ---------------------------------*/ 
+
+#heading{
+    font-size: 2em;
+    font-family: 'Qwitcher Grypen', cursive;
+    line-height: 200px;
+}
+
+#sign  {
+    font-size: 2em;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: bold;
+    line-height: 100px;
+    
+}
+
+#buttr{
+    transform: translate(50px, 90px);
+}
+
+#txtAbout{
+    background-image: url(./Untitled-1_f.png);
+    background-position: 400px 500px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 90vh;
+}
+
+/* ------------------------------- Gallery PAGE CONTENT ---------------------------------*/ 
+.gallery {
+	display: flex;
+	padding: 4px;
+	transition: .3s;
+    margin-top: 50px;
+}
+ .gallery__image {
+		filter: grayscale(0.7);
+}
+ .gallery__image:hover {
+		filter: grayscale(0);
+        
+}
+	
+.gallery__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+    .gallery__link {
+		margin: 4px;
+		overflow: hidden;
+    }	
+    
+    .gallery__thumb {
+		position: relative;
+	}
+	
+	.gallery__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+    }
+    .gallery_image:hover {
+			transform: scale(1.5);
+		}
+	
+	
+
